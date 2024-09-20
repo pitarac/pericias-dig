@@ -17,18 +17,15 @@ const menu_data: DataType[] = [
   {
     id: 1,
     title: 'Home',
-    link: '#',
-    has_dropdown: true,
-    sub_menus: [
-      { title: 'Pericias', link: '/' },
-      { title: 'Tribunais', link: '/home-2' },
-      { title: 'Laudos', link: '/home-3' },
-    ]
+    link: '/',
+    has_dropdown: false,
+    
+    
   },
   {
     id: 2,
     title: 'Sobre',
-    link: '#',
+    link: '/about',
     has_dropdown: true,
     sub_menus: [
       { title: 'About 01', link: '/about' },
@@ -41,19 +38,19 @@ const menu_data: DataType[] = [
     link: '#',
     has_dropdown: true,
     sub_menus: [
-      { title: 'Services', link: '/service' },
-      { title: 'Services Deails', link: '/service-details' },
+      { title: 'Laudos Periciais', link: '/service' },
+      { title: 'Parecer Tecnico', link: '/service2' },
     ]
   },
   {
     id: 4,
-    title: 'Paginas',
+    title: 'Conheça',
     link: '#',
     has_dropdown: true,
     sub_menus: [
       { title: 'Projetos', link: '/project' },
       { title: 'Detalhe de projetos', link: '/project-details' },
-      { title: 'Pricing Plan', link: '/pricing' },
+      
       { title: 'Quem Somos', link: '/team' },
       { title: 'Perguntas e respostas', link: '/faq' },
     ]
@@ -125,7 +122,7 @@ const HeaderOne = () => {
             </div>
 
             <div className="col-20 d-none d-xl-block text-end align-self-center">
-              <Link href="/contact" className="btn_one">Get started now</Link>
+              <Link href="/contact" className="btn_one">Envie seu caso</Link>
             </div>
             
             <div id="sm_menu_ham" onClick={handleActive} className={`${open ? 'open' : ''}`}>

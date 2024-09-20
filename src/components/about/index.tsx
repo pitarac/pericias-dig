@@ -15,7 +15,7 @@ const About = () => {
   return (
     <>
       <HeaderOne />
-      <Breadcrumb title="About Us" subtitle="About Us" />
+      <Breadcrumb title="Conheça " subtitle="Nosso Trabalho" />
       <AboutArea />
       <BrandAreaHomeTwo />
       <PortfolioAreaHomeOne />

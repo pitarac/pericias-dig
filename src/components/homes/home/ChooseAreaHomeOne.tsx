@@ -33,14 +33,14 @@ const ChooseAreaHomeOne = () => {
               <div className="row">
                 <div className="col-lg-4 col-sm-4 col-xs-12 no-padding">
                   <div className="single-project2">
-                    <h2 className="counter-num">94%</h2>
-                    <h4>Satisfação dos Clientes</h4>
+                    <h2 className="counter-num">100%</h2>
+                    <h4>Precisão Técnica</h4>
                   </div>
                 </div>
                 <div className="col-lg-4 col-sm-4 col-xs-12 no-padding">
                   <div className="single-project2">
-                    <h2 className="counter-num">85%</h2>
-                    <h4>Casos Bem-Sucedidos</h4>
+                    <h2 className="counter-num">100%</h2>
+                    <h4>Transparência</h4>
                   </div>
                 </div>
                 <div className="col-lg-4 col-sm-4 col-xs-12 no-padding">
