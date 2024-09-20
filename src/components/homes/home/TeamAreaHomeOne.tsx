@@ -44,8 +44,8 @@ const TeamAreaHomeOne = () => {
                       className="img-fluid"
                       alt="Paulo Leocádia"
                     />
-                    <h4>Paulo Leocádia</h4>
-                    <p>Perito Tecnológico</p>
+                    <h4>Paulo Henrique</h4>
+                    <p>Especialista em Machine Learning & Analytics PUC-Rio</p>
                   </div>
                 </div>
                 <div
@@ -61,7 +61,7 @@ const TeamAreaHomeOne = () => {
                       alt="Maria Silva"
                     />
                     <h4>Maria Silva</h4>
-                    <p>Analista Forense</p>
+                    <p>Formada em Direito e Especialista em Evidência Científica</p>
                   </div>
                 </div>
                 <div
@@ -77,7 +77,7 @@ const TeamAreaHomeOne = () => {
                       alt="João Santos"
                     />
                     <h4>João Santos</h4>
-                    <p>Especialista em Segurança</p>
+                    <p>Especialista em Segurança da Informação</p>
                   </div>
                 </div>
                 <div
