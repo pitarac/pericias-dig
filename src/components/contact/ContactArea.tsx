@@ -11,7 +11,7 @@ const ContactArea = () => {
   });
   const [mensagem, setMensagem] = useState('');
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -19,7 +19,7 @@ const ContactArea = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     try {
@@ -40,7 +40,7 @@ const ContactArea = () => {
         email: '',
         subject: '',
         message: ''
-      }); // Limpa os campos após o envio
+      });
     } catch (error) {
       console.error('Erro:', error);
       setMensagem('Erro ao enviar a mensagem. Tente novamente.');
@@ -65,7 +65,7 @@ const ContactArea = () => {
                 <h4>Telefone</h4>
                 <p>
                   <a href="https://wa.me/5561981388239" target="_blank">
-                  + 55 (61) 9 8138-8239
+                    + 55 (61) 9 8138-8239
                   </a>
                 </p>
               </div>
@@ -77,7 +77,6 @@ const ContactArea = () => {
                 <p>
                   <a href="mailto:info@periciadigital.tec.br">info@periciadigital.tec.br</a>
                 </p>
-
               </div>
             </div>
           </div>
