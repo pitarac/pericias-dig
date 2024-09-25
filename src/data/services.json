@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Perícia em Dispositivos Móveis",
+    "description": "Análise detalhada de dispositivos móveis para coleta de evidências digitais.",
+    "image": "assets/img/service1.png"
+  },
+  {
+    "id": 2,
+    "title": "Análise Forense de Dados",
+    "description": "Exame e recuperação de dados de sistemas e dispositivos digitais.",
+    "image": "assets/img/service2.png"
+  },
+  {
+    "id": 3,
+    "title": "Avaliação de Sistemas de Informação",
+    "description": "Avaliação técnica de sistemas para garantir a integridade e segurança dos dados.",
+    "image": "assets/img/service3.png"
+  },
+  {
+    "id": 4,
+    "title": "Auditoria de Segurança da Informação",
+    "description": "Avaliação de políticas de segurança e práticas de gestão de riscos.",
+    "image": "assets/img/service8.png"
+  },
+  {
+    "id": 5,
+    "title": "Consultoria em Compliance Digital",
+    "description": "Orientação sobre conformidade legal e regulamentar em tecnologia.",
+    "image": "assets/img/service9.png"
+  },
+  {
+    "id": 6,
+    "title": "Elaboração de Laudos Técnicos",
+    "description": "Produção de laudos detalhados para apresentação em processos judiciais.",
+    "image": "assets/img/service10.png"
+  }
+]

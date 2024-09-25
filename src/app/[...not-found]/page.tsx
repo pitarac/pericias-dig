@@ -1,4 +1,4 @@
-// Arquivo: pages/[...not-found].js ou app/[...not-found]/page.js
+// app/[...not-found]/page.js
 
 import Error from "@/components/Error";
 import Wrapper from "@/layouts/Wrapper";
@@ -8,9 +8,16 @@ export const metadata = {
   title: "404 error || Pericias Digitais",
 };
 
-// Função para gerar parâmetros estáticos (necessária para exportação)
+// Função para gerar parâmetros estáticos
 export function generateStaticParams() {
-  return []; // Retornando um array vazio, pois não há parâmetros dinâmicos
+  return [
+    { notFound: ["service-details/1"] },
+    { notFound: ["service-details/2"] },
+    { notFound: ["service-details/3"] },
+    { notFound: ["offline.json"] },
+    { notFound: ["sw.js"] },
+    // Adicione outras rotas dinâmicas que você espera que não existam
+  ];
 }
 
 const NotFoundPage = () => {

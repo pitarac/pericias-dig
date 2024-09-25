@@ -14,11 +14,11 @@ const Error = () => {
           <div className="row">
             <div className="col-lg-12 col-sm-12 col-xs-12 text-center">
               <div className="error_page">
-                <img src="assets/img/404.svg" className="img-fluid" alt="404 error" />
-                <h2>Oops! Page not found</h2>
-                <p>Hmm. We're having trouble finding that site. Try again later or Check your network connection.</p>
+                <img src="assets/img/404.svg" className="img-fluid" alt="Página não encontrada" />
+                <h2>Oops! Página não encontrada</h2>
+                <p>Hmm. Estamos tendo problemas para encontrar esse site. Tente novamente mais tarde ou verifique sua conexão de rede.</p>
                 <div className="home_btn">
-                  <Link href="/" className="btn_one">Back to Home</Link>
+                  <Link href="/" className="btn_one">Voltar para a Home</Link>
                 </div>
               </div>
             </div>
@@ -26,7 +26,6 @@ const Error = () => {
         </div>
       </section>
       <FooterOne />
-
     </>
   );
 };

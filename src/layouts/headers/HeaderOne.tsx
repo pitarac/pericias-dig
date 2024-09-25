@@ -1,46 +1,34 @@
 'use client'
-import Link from 'next/link';
-import React, { useState } from 'react';
+import Link from 'next/link'
+import React, { useState } from 'react'
 
 interface DataType {
-  id: number;
-  title: string;
-  link: string;
-  has_dropdown: boolean;
+  id: number
+  title: string
+  link: string
+  has_dropdown: boolean
   sub_menus?: {
-    title: string;
-    link: string;
-  }[];
+    title: string
+    link: string
+  }[]
 }
 
 const menu_data: DataType[] = [
   {
     id: 1,
-    title: 'Home',
+    title: 'Início',
     link: '/',
-    has_dropdown: false,
-    
-    
+    has_dropdown: false
   },
   {
     id: 2,
     title: 'Sobre',
-    link: '/about',
-    has_dropdown: true,
-    sub_menus: [
-      { title: 'About 01', link: '/about' },
-      { title: 'About 02', link: '/about-2' },
-    ]
+    link: '/about'
   },
   {
     id: 3,
     title: 'Serviços',
-    link: '#',
-    has_dropdown: true,
-    sub_menus: [
-      { title: 'Laudos Periciais', link: '/service' },
-      { title: 'Parecer Tecnico', link: '/service2' },
-    ]
+    link: '/service'
   },
   {
     id: 4,
@@ -50,9 +38,9 @@ const menu_data: DataType[] = [
     sub_menus: [
       { title: 'Projetos', link: '/project' },
       { title: 'Detalhe de projetos', link: '/project-details' },
-      
+
       { title: 'Quem Somos', link: '/team' },
-      { title: 'Perguntas e respostas', link: '/faq' },
+      { title: 'Perguntas e respostas', link: '/faq' }
     ]
   },
   {
@@ -62,34 +50,31 @@ const menu_data: DataType[] = [
     has_dropdown: true,
     sub_menus: [
       { title: 'Blog', link: '/blog' },
-      { title: 'Artigos', link: '/blog-details' },
+      { title: 'Artigos', link: '/blog-details' }
     ]
   },
   {
     id: 5,
     title: 'Contato',
     link: '/contact',
-    has_dropdown: false,
-  },
+    has_dropdown: false
+  }
 ]
 
 const HeaderOne = () => {
-  const [open, setOpen] = useState<Boolean>(false);
-  const handleActive = () => setOpen(!open);
+  const [open, setOpen] = useState<Boolean>(false)
+  const handleActive = () => setOpen(!open)
 
-
-  const [navTitle, setNavTitle] = useState<string>(""); 
+  const [navTitle, setNavTitle] = useState<string>('')
 
   //openMobileMenu
   const openMobileMenu = (menu: string) => {
     if (navTitle === menu) {
-      setNavTitle("");
+      setNavTitle('')
     } else {
-      setNavTitle(menu);
+      setNavTitle(menu)
     }
-  };
-
-
+  }
 
   return (
     <>
@@ -98,7 +83,9 @@ const HeaderOne = () => {
           <div className="row">
             <div className="col-20 align-self-center">
               <div className="site-logo">
-                <Link href="/"><img src="assets/img/logo-top.png" alt="" /></Link>
+                <Link href="/">
+                  <img src="assets/img/logo-top.png" alt="" />
+                </Link>
               </div>
             </div>
 
@@ -106,12 +93,19 @@ const HeaderOne = () => {
               <nav id="main-menu">
                 <ul>
                   {menu_data.map((item, i) => (
-                    <li key={i} className={`${item.has_dropdown ? 'menu-item-has-children' : ''}`}>
+                    <li
+                      key={i}
+                      className={`${
+                        item.has_dropdown ? 'menu-item-has-children' : ''
+                      }`}
+                    >
                       <Link href={item.link}>{item.title}</Link>
                       {item.has_dropdown && (
                         <ul>
                           {item?.sub_menus?.map((sub_item, index) => (
-                            <li key={index}><Link href={sub_item.link}>{sub_item.title}</Link></li>
+                            <li key={index}>
+                              <Link href={sub_item.link}>{sub_item.title}</Link>
+                            </li>
                           ))}
                         </ul>
                       )}
@@ -122,10 +116,16 @@ const HeaderOne = () => {
             </div>
 
             <div className="col-20 d-none d-xl-block text-end align-self-center">
-              <Link href="/contact" className="btn_one">Envie seu caso</Link>
+              <Link href="/contact" className="btn_one">
+                Envie seu caso
+              </Link>
             </div>
-            
-            <div id="sm_menu_ham" onClick={handleActive} className={`${open ? 'open' : ''}`}>
+
+            <div
+              id="sm_menu_ham"
+              onClick={handleActive}
+              className={`${open ? 'open' : ''}`}
+            >
               <span></span>
               <span></span>
               <span></span>
@@ -135,25 +135,36 @@ const HeaderOne = () => {
             <div className={`sm_menu_outer slide ${open ? 'active' : ''}`}>
               <ul className="mobile_menu">
                 {menu_data.map((item, i) => (
-                  <li key={i} className={`${item.has_dropdown ? 'hasChild' : ''} ${navTitle === item.title ? "active" : ""}`} onClick={() => openMobileMenu(item.title)}>
-                    <Link href={item.link}>{item.title}</Link>                                     
+                  <li
+                    key={i}
+                    className={`${item.has_dropdown ? 'hasChild' : ''} ${
+                      navTitle === item.title ? 'active' : ''
+                    }`}
+                    onClick={() => openMobileMenu(item.title)}
+                  >
+                    <Link href={item.link}>{item.title}</Link>
                     {item.has_dropdown && (
                       <ul className="sub-menu">
                         {item?.sub_menus?.map((sub_item, index) => (
-                          <li key={index} className="back" onClick={() => openMobileMenu(item.title)}><Link href={sub_item.link}>{sub_item.title}</Link></li>
+                          <li
+                            key={index}
+                            className="back"
+                            onClick={() => openMobileMenu(item.title)}
+                          >
+                            <Link href={sub_item.link}>{sub_item.title}</Link>
+                          </li>
                         ))}
                       </ul>
                     )}
                   </li>
-                ))} 
+                ))}
               </ul>
             </div>
-
           </div>
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default HeaderOne;
+export default HeaderOne
