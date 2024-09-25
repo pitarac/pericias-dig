@@ -5,7 +5,8 @@ const NewsletterAreaHomeOne = () => {
   const [email, setEmail] = useState('');
   const [mensagem, setMensagem] = useState('');
 
-  const handleSubmit = async (e) => {
+  // Adicione o tipo para o parâmetro 'e'
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     try {
