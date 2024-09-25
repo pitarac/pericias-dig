@@ -27,9 +27,9 @@ const AboutAreaHomeOne = () => {
               data-wow-offset="0"
             >
               <div className="ab_content">
-                <span>Sobre a Empresa</span>
+                <span>Direito e Tecnologia</span>
                 <h2>
-                  Especialistas em Perícias Judiciais para Soluções Técnicas e Precisas
+                  Especialistas em Perícias Judiciais oferecendo parecer tecnico e laudos.
                 </h2>
               </div>
               <div className="abmv">

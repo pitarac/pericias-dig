@@ -8,9 +8,8 @@ import ServiceAreaHomeOne from './ServiceAreaHomeOne';
 import AoutUsAreaHomeOne from './AoutUsAreaHomeOne';
 import PortfolioAreaHomeOne from './PortfolioAreaHomeOne';
 import ChooseAreaHomeOne from './ChooseAreaHomeOne';
-
+import ContactArea from '../../contact/ContactArea';
 import TestimonialAreaHomeOne from './TestimonialAreaHomeOne';
-
 import NewsletterAreaHomeOne from './NewsletterAreaHomeOne';
 import FooterOne from '@/layouts/footers/FooterOne';
 import CounterAreaHomeOne from './CounterAreaHomeOne';
@@ -26,9 +25,8 @@ const HomeOne = () => {
        <AoutUsAreaHomeOne />
        <PortfolioAreaHomeOne />
        <ChooseAreaHomeOne />
-       
        <TestimonialAreaHomeOne />
-       
+       <ContactArea />
        <NewsletterAreaHomeOne />
        <FooterOne />
     </>

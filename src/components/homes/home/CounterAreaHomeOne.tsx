@@ -4,20 +4,24 @@ import React from 'react';
 
 const counter_data = [
   {
+    count: 27,
+    title: 'Tribunais de Justiça Com Cadastro ativo',
+    symbol: '+', // Novo campo para o símbolo
+  },
+  {
     count: 10,
-    title: 'Anos de Experiência em Perícias',
+    title: 'Anos de experiência no setor de Tecnologia ',
+    symbol: '€', // Pode ser qualquer símbolo
   },
   {
-    count: 150,
-    title: 'Casos Periciados com Sucesso',
+    count: 8,
+    title: 'Certificados na área de Tecnologia',
+    symbol: '#', // Outro exemplo de símbolo
   },
   {
-    count: 12,
-    title: 'Certificações Profissionais',
-  },
-  {
-    count: 200,
-    title: 'laudos',
+    count: 100,
+    title: 'Compromisso com a Verdade e Ciência',
+    symbol: '*', // Outro exemplo de símbolo
   },
 ]
 

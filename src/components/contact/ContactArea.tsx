@@ -56,23 +56,28 @@ const ContactArea = () => {
               <div className="single_address">
                 <i className="ti-map"></i>
                 <h4>Nossa Localização</h4>
-                <p>3481 Melrose Place, Beverly Hills <br /> CA 90210</p>
+                <p>Atuação Remota em todo Território Nacional <br /> Brasília</p>
               </div>
             </div>
             <div className="col-lg-4 col-sm-4 col-xs-12 mt-5">
               <div className="single_address sabr">
                 <i className="ti-mobile"></i>
                 <h4>Telefone</h4>
-                <p>(+1) 517 397 7100</p>
-                <p>(+1) 411 315 8138</p>
+                <p>
+                  <a href="https://wa.me/5561981388239" target="_blank">
+                  + 55 (61) 9 8138-8239
+                  </a>
+                </p>
               </div>
             </div>
             <div className="col-lg-4 col-sm-4 col-xs-12 mt-5">
               <div className="single_address">
                 <i className="ti-email"></i>
                 <h4>Envie um e-mail</h4>
-                <p>info@exemplo.com</p>
-                <p>admin@exemplo.com</p>
+                <p>
+                  <a href="mailto:info@periciadigital.tec.br">info@periciadigital.tec.br</a>
+                </p>
+
               </div>
             </div>
           </div>

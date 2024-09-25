@@ -13,7 +13,7 @@ const Breadcrumb = ({ title = 'title', subtitle = 'subtitle' }: any) => {
             <div className="section-top-title wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
               <h1>{title}</h1>
               <ul>
-                <li><Link href="/">Home </Link></li>  {' '}
+                <li><Link href="/">Início</Link></li>  {' '}
                 <li> / {subtitle}</li>
               </ul>
             </div>

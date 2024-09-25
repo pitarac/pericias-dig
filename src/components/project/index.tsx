@@ -9,7 +9,7 @@ const Project = () => {
   return (
     <>
       <HeaderOne />
-      <Breadcrumb title="Our Project" subtitle="Project" />
+      <Breadcrumb title="Projetos e Atuações" subtitle="Project" />
       <ProjectArea />
       <FooterOne />
     </>

@@ -23,12 +23,18 @@ const menu_data: DataType[] = [
   {
     id: 2,
     title: 'Sobre',
-    link: '/about'
+    link: '/about',
+    has_dropdown: false
   },
   {
     id: 3,
     title: 'Serviços',
-    link: '/service'
+    link: '/service',
+    has_dropdown: true,
+    sub_menus: [
+      { title: 'Projetos', link: '/project' },
+      { title: 'Perguntas e respostas', link: '/faq' }
+    ]
   },
   {
     id: 4,

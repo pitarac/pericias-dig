@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <>
       <HeaderOne />
-      <Breadcrumb title="Contact Us" subtitle="Contact" />
+      <Breadcrumb title="Envie sua Dúvida" subtitle="Contact" />
       <ContactArea />
       <FooterOne />
     </>

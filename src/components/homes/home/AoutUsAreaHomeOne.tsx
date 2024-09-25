@@ -29,25 +29,25 @@ const AboutUsAreaHomeOne = () => {
               data-wow-offset="0"
             >
               <div className="ab_content">
-                <span>Confie em nossos serviços tecnológicos</span>
+                <span>Confie em nossos serviços de perícia judicial</span>
                 <h2>
-                  Especialistas em Perícias Tecnológicas disponíveis 24/7 para solucionar seus problemas.
+                  Especialistas em Perícias Judiciais Tecnológicas prontos para resolver suas demandas.
                 </h2>
               </div>
               <div className="abmv">
                 <h4>
-                  <img src="assets/img/check.png" alt="" /> Serviços de Perícia Tecnológica
+                  <img src="assets/img/check.png" alt="" /> Análises Forenses Tecnológicas
                 </h4>
                 <p>
-                  Oferecemos análises técnicas detalhadas para auxiliar em casos que envolvem tecnologia e informática.
+                  Realizamos investigações detalhadas e análises técnicas que suportam casos judiciais envolvendo tecnologia e informática.
                 </p>
               </div>
               <div className="abmv">
                 <h4>
-                  <img src="assets/img/check.png" alt="" /> Certificação Profissional
+                  <img src="assets/img/check.png" alt="" /> Equipe Certificada e Experiente
                 </h4>
                 <p>
-                  Nossa equipe é certificada e possui vasta experiência em perícias na área de tecnologia.
+                  Nossos profissionais são altamente qualificados, com certificações relevantes e ampla experiência em perícias judiciais na área de tecnologia.
                 </p>
               </div>
             </div>
