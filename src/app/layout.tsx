@@ -4,6 +4,7 @@ import "../styles/index.css";
 
 
 export const metadata = {
+	metadataBase: new URL('https://periciadigital.tec.br/'),
   title: 'Perícias Digitais | Especialistas em Tecnologia Judiciária',
   description: 'Serviços de perícias digitais confiáveis e detalhadas, com uma equipe de especialistas prontos para apoiar a justiça em casos tecnológicos e de informática. Consultoria e laudos técnicos para advogados e empresas.',
   keywords: 'perícias digitais, tecnologia judiciária, análise forense, consultoria tecnológica',

@@ -1,10 +1,23 @@
 'use client'
 
-import VideoPopup from '@/modals/VideoPopup'
-import React, { useState } from 'react'
+import VideoPopup from '@/modals/VideoPopup';
+import React, { useState } from 'react';
 
-const ServiceDetailsArea = ({ service }) => {
-  const [isVideoOpen, setIsVideoOpen] = useState(false)
+// Definindo a interface para o tipo Service
+interface Service {
+  image: string;
+  title: string;
+  description: string;
+  // Adicione outros campos conforme necessário
+}
+
+// Definindo a interface para as propriedades do componente
+interface ServiceDetailsAreaProps {
+  service: Service; // Tipo do serviço
+}
+
+const ServiceDetailsArea: React.FC<ServiceDetailsAreaProps> = ({ service }) => {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   return (
     <>
@@ -28,7 +41,7 @@ const ServiceDetailsArea = ({ service }) => {
                 style={{
                   backgroundImage: `url(assets/img/video.jpg)`,
                   backgroundSize: 'cover',
-                  backgroundPosition: 'center center'
+                  backgroundPosition: 'center center',
                 }}
               >
                 <a
@@ -49,7 +62,7 @@ const ServiceDetailsArea = ({ service }) => {
         videoId={'i810CxN5Q6Q'}
       />
     </>
-  )
-}
+  );
+};
 
-export default ServiceDetailsArea
+export default ServiceDetailsArea;
