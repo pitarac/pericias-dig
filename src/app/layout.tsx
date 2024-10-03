@@ -9,7 +9,6 @@ export const metadata = {
   description: 'Serviços de perícias digitais confiáveis e detalhadas, com uma equipe de especialistas prontos para apoiar a justiça em casos tecnológicos e de informática. Consultoria e laudos técnicos para advogados e empresas.',
   keywords: 'perícias digitais, tecnologia judiciária, análise forense, consultoria tecnológica',
   author: 'Paulo Henrique Lima',
-  viewport: 'width=device-width, initial-scale=1.0',
   robots: 'index, follow',
   openGraph: {
     title: 'Perícias Digitais | Especialistas em Tecnologia Judiciária',
