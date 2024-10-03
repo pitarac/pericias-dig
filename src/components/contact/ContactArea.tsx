@@ -76,7 +76,7 @@ const ContactArea = () => {
                 <h4>Envie um e-mail</h4>
                 <p>
                    <a href="mailto:info@periciadigital.tec.br">info@periciadigital.tec.br</a>
-                </p>
+          </p>
 
               </div>
             </div>
