@@ -47,7 +47,7 @@ const CookieConsent: React.FC = () => {
       <div className="cookie-content">
         <p>
           Utilizamos cookies para melhorar sua experiência no nosso site. Ao continuar navegando, você concorda com a nossa
-          <a href="/politica-de-cookies"> Política de Cookies</a>.
+          <a href="/cookie"> Política de Cookies</a>.
         </p>
         <button onClick={handleAccept} className="btn-accept">Aceitar</button>
         <button onClick={handleDecline} className="btn-decline">Recusar</button>

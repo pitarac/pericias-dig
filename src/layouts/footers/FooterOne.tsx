@@ -61,7 +61,7 @@ const FooterOne = () => {
                 <ul>
                   <li><a href="/termos-de-uso">Termos de uso</a></li>
                   <li><a href="/politica-de-privacidade">Política de Privacidade</a></li>
-                  <li><a href="/cookies">Política de Cookies</a></li>
+                  <li><a href="/cookie">Política de Cookies</a></li>
                 </ul>
               </div>
             </div>

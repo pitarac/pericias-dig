@@ -8,31 +8,55 @@ const CookiePolicy = () => {
     <>
       <HeaderOne />
       <Breadcrumb title="Política de Cookies" subtitle="Política de Cookies" />
-      <div className="content-area">
-        <div className="container">
-          <h1>Política de Cookies</h1>
-          <p>
-            A Perícia Digital, como muitos outros sites, utiliza cookies para melhorar a experiência de navegação e personalizar o conteúdo. 
-            Esta política de cookies explica o que são cookies e como os utilizamos no site <a href="https://periciadigital.tec.br/">https://periciadigital.tec.br/</a>.
-          </p>
-          <h2>O Que São Cookies?</h2>
-          <p>
-            Cookies são pequenos arquivos de texto que são armazenados no seu dispositivo quando você visita um site. 
-            Eles permitem que o site reconheça seu dispositivo em visitas futuras, melhorando sua experiência.
-          </p>
-          <h2>Como Utilizamos os Cookies?</h2>
-          <p>
-            Utilizamos cookies para várias finalidades, como lembrar suas preferências de navegação, personalizar o conteúdo 
-            e analisar o desempenho do site.
-          </p>
-          <h2>Gerenciar Cookies</h2>
-          <p>
-            Você pode optar por aceitar ou recusar cookies nas configurações do seu navegador. 
-            No entanto, a desativação de cookies pode afetar a funcionalidade de algumas partes do nosso site.
-          </p>
-          {/* Adicione mais informações conforme necessário */}
-        </div>
-      </div>
+      <div className="cookie-policy">
+  <h1>Política de Cookies</h1>
+
+  <p>
+    Na <strong>Perícia Digital</strong>, utilizamos cookies para melhorar sua experiência de navegação, fornecer funcionalidades personalizadas e exibir anúncios relevantes de acordo com seus interesses.
+  </p>
+
+  <h2>O que são Cookies?</h2>
+  <p>
+    Cookies são pequenos arquivos de texto armazenados no seu dispositivo (computador, smartphone, tablet, etc.) quando você acessa um site. Eles permitem que o site reconheça o seu dispositivo em futuras visitas, proporcionando uma experiência de navegação personalizada e eficiente.
+  </p>
+
+  <h2>Como Utilizamos Cookies?</h2>
+  <p>Utilizamos cookies para as seguintes finalidades:</p>
+
+  <ul>
+    <li>
+      <strong>Cookies Essenciais:</strong> Necessários para o funcionamento correto do site, permitindo que você navegue e utilize recursos como áreas seguras.
+    </li>
+    <li>
+      <strong>Cookies de Desempenho:</strong> Usados para entender como os visitantes utilizam nosso site, ajudando-nos a melhorar sua experiência.
+    </li>
+    <li>
+      <strong>Cookies de Funcionalidade:</strong> Esses cookies lembram suas preferências, como idioma e região, para oferecer uma experiência personalizada.
+    </li>
+    <li>
+      <strong>Cookies de Marketing:</strong> Utilizados para exibir anúncios que são relevantes para você. Esses cookies ajudam a medir a eficácia das campanhas de marketing e podem ser configurados por nossos parceiros de publicidade.
+    </li>
+    <li>
+      <strong>Cookies de Terceiros:</strong> Trabalhamos com parceiros externos que podem configurar cookies para monitorar suas interações com nosso conteúdo ou exibir anúncios em outras plataformas.
+    </li>
+  </ul>
+
+  <h2>Gerenciamento de Cookies</h2>
+  <p>
+    Você pode gerenciar suas preferências de cookies diretamente nas configurações do seu navegador. No entanto, ao desativar cookies, algumas funcionalidades do site podem não funcionar corretamente.
+  </p>
+
+  <h2>Alterações nesta Política</h2>
+  <p>
+    Podemos atualizar esta política de cookies periodicamente para refletir mudanças em nossas práticas. Aconselhamos que você consulte esta página regularmente para se manter informado.
+  </p>
+
+  <h2>Contato</h2>
+  <p>
+    Se você tiver dúvidas sobre nossa política de cookies, entre em contato conosco em <a href="mailto:infor@periciadigital.tec.br">infor@periciadigital.tec.br</a>.
+  </p>
+</div>
+
       <FooterOne />
     </>
   );
